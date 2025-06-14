@@ -80,7 +80,13 @@
         />
       </section>
 
-      <section class="introduction">
+      <button
+        onclick='toggleIntroduction()'
+        style='display: block; margin: 20px auto; padding: 10px 20px; font-size: 16px; background-color: darkseagreen; color: white; border: none; outline: none; border-radius: 4px;'
+      >
+          Toggle Introduction
+      </button>
+      <section class="introduction" id='intro-text'>
         <h1 id="main-heading">Welcome to the world of Beautiful Landscapes</h1>
         <p>
           This website serves as a celebration of the breathtaking landscapes
@@ -243,5 +249,7 @@
         <p><small>&copy; 2024 Beautiful Landscapes</small></p>
       </section>
     </footer>
+
+    <script src='js/index.js'></script>
   </body>
 </html>
