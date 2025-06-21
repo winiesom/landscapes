@@ -6,9 +6,9 @@ let greeting;
 greeting = 'Good Afternoon!';
 console.log(greeting);
 
-let myName = 'Winifred';
-myName = 'Winnie';
-console.log(myName);
+// let myName = 'Winifred';
+// myName = 'Winnie';
+// console.log(myName);
 
 // DATA TYPES
 // 1.String, 2.Number, 3.Boolean, 4.Null, 5.Undefined, 6.Object, 7. Array
@@ -154,8 +154,10 @@ switch (timeofDay) {
         console.log('Good Evening!');
         break;
 }
+let myName = 'Winnie';
 
 function toggleIntroduction() {
+    let myName = 'Winnie';
     let intro = document.getElementById('intro-text');
 
     if (intro.style.display === 'none') {
@@ -166,3 +168,71 @@ function toggleIntroduction() {
         console.log('Introduction is now hidden.');
     }
 }
+
+
+// function greetUser() {
+//     alert('Hello, ' + myName + "! Welcome to Beautiful Landscapes.");
+// }
+// greetUser();
+
+function changeHeading() {
+    let heading = document.getElementById('main-heading');
+    heading.textContent = 'Explore Nature\'s Beauty';
+}
+
+function changeImage() {
+    let image = document.getElementById('hero-image');
+    image.src = 'images/image10.jpg';
+}
+
+function changeHeadingColour() {
+    let heading = document.getElementById('main-heading');
+    heading.style.color = 'pink';
+}
+
+let headingParagraph1 = document.getElementById('intro-p1');
+headingParagraph1.addEventListener('mouseover', 
+    function() {
+        headingParagraph1.style.color = 'darkgreen';
+        console.log('Mouse over event triggered on paragraph 1.');
+    }
+)
+
+let today = new Date();
+console.log('Today\'s date is:', today);
+
+let day = today.getDate();
+console.log('Day of the month:', day);
+
+let month = today.getMonth() + 1; // Months are zero-indexed
+console.log('Month:', month);
+
+let year = today.getFullYear();
+console.log('Year:', year);
+
+let hours = today.getHours();
+console.log('Hours:', hours);
+
+let minutes = today.getMinutes();
+console.log('Minutes:', minutes);
+
+let seconds = today.getSeconds();
+console.log('Seconds:', seconds);
+
+function showCurrentDate() {
+    const now = new Date();
+
+    const day = now.getDate();
+    const month = now.getMonth() + 1; // Months are zero-indexed
+    const year = now.getFullYear();
+    const hours = now.getHours();
+    const minutes = now.getMinutes();
+    const seconds = now.getSeconds();
+
+    const formattedDate = `Today is: ${day}/${month}/${year} - ${hours}:${minutes}:${seconds}`;
+    console.log(formattedDate);
+    return formattedDate;
+}
+document.getElementById('current-day').textContent = showCurrentDate();
+
+// showCurrentDate();

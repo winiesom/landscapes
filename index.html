@@ -66,29 +66,32 @@
         <a href="#featured" target="_self">Featured Landscapes</a> |
         <a href="#other-views" target="_self">Other Stunning Views</a>
       </nav>
+      <p id='current-day' style='color:grey;'></p>
     </header>
 
     <!-- Main container for the content -->
     <main>
       <!-- Introduction section -->
+      <!-- onmouseover="changeImage()"" -->
       <section>
         <img
           src="images/image5.jpg"
           alt="A breathtaking view of a waterfall"
           loading="lazy"
           class="image-box"
+          id="hero-image"
         />
       </section>
 
-      <button
-        onclick='toggleIntroduction()'
-        style='display: block; margin: 20px auto; padding: 10px 20px; font-size: 16px; background-color: darkseagreen; color: white; border: none; outline: none; border-radius: 4px;'
-      >
-          Toggle Introduction
-      </button>
+      <section style='display: flex; flex-direction: row; justify-content: center; gap: 10px;'>
+        <button onclick='changeHeading()' class='js-buttons'>Change Heading</button>
+        <button onclick='toggleIntroduction()' class='js-buttons'>Toggle Introduction</button>
+        <button ondblclick='changeImage()' class='js-buttons'>Change Image</button>
+      </section>
+
       <section class="introduction" id='intro-text'>
-        <h1 id="main-heading">Welcome to the world of Beautiful Landscapes</h1>
-        <p>
+        <h1 id="main-heading" onmouseover='changeHeadingColour()'>Welcome to the world of Beautiful Landscapes</h1>
+        <p id='intro-p1'>
           This website serves as a celebration of the breathtaking landscapes
           that exist around the world. Each landscape is a testament to the raw
           beauty of our planet, showcasing nature’s incredible diversity and the

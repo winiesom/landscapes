@@ -527,3 +527,15 @@ footer {
   margin-top: 20px;
 }
 /* Footer styles end */
+
+
+.js-buttons {
+  margin-top: 20px;
+  padding: 10px 20px; 
+  font-size: 16px; 
+  background-color: darkseagreen; 
+  color: white; 
+  border: none; 
+  outline: none; 
+  border-radius: 4px;
+}
