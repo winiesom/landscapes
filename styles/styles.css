@@ -539,3 +539,43 @@ footer {
   outline: none; 
   border-radius: 4px;
 }
+
+.photographer-main {
+  margin: 0 auto;
+  padding: 20px 70px;
+}
+
+.photographer-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.photographer-controls input {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.photographer-controls button {
+  background-color: darkcyan;
+  color: white;
+  border:none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.photographer-controls button:hover {
+  background-color: teal;
+}
+
+.photographer {
+  margin-bottom: 32px;
+  padding: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background-color: #fff;
+}
