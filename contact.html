@@ -37,12 +37,14 @@
           <section class="form-group">
             <section class="form-field">
               <label for="firstname">First Name:</label>
-              <input type="text" id="firstname" name="firstname" required />
+              <input type="text" id="firstname" name="firstname" />
+              <small class="error-message" id="firstname-error"></small>
             </section>
 
             <section class="form-field">
               <label for="lastname">Last Name:</label>
-              <input type="text" id="lastname" name="lastname" required />
+              <input type="text" id="lastname" name="lastname" />
+              <small class="error-message" id="lastname-error"></small>
             </section>
           </section>
 
@@ -50,7 +52,8 @@
           <section class="form-group">
             <section class="form-field">
               <label for="email">Email:</label>
-              <input type="email" id="email" name="email" required />
+              <input type="email" id="email" name="email" />
+              <small class="error-message" id="email-error"></small>
             </section>
 
             <section class="form-field">
@@ -62,6 +65,7 @@
                 pattern="[0-9]{10}"
                 placeholder="1234567890"
               />
+              <small class="error-message" id="phone-error"></small>
             </section>
           </section>
 
@@ -70,6 +74,7 @@
             <section class="form-field">
               <label for="age">Age:</label>
               <input type="number" id="age" name="age" min="18" max="100" />
+              <small class="error-message" id="age-error"></small>
             </section>
           </section>
 
@@ -83,6 +88,7 @@
               <input type="radio" id="female" name="gender" value="female" />
               <label for="female">Female</label>
             </section>
+            <small class="error-message" id="gender-error"></small>
           </section>
 
           <!-- interests -->
@@ -113,6 +119,7 @@
               />
               <label for="nature">Nature</label>
             </section>
+            <small class="error-message" id="interests-error"></small>
           </section>
 
           <!-- inquiry -->
@@ -125,6 +132,7 @@
                 <option value="collaboration">Collaboration</option>
               </select>
             </section>
+            <small class="error-message" id="inquiry-error"></small>
           </section>
 
           <!-- upload -->
@@ -139,12 +147,8 @@
           <section class="form-group">
             <section class="form-field">
               <label for="message">Message:</label>
-              <textarea
-                id="message"
-                name="message"
-                rows="4"
-                required
-              ></textarea>
+              <textarea id="message" name="message" rows="4"></textarea>
+              <small class="error-message" id="message-error"></small>
             </section>
           </section>
 
@@ -183,7 +187,9 @@
             <ul>
               <li><a href="index.html" target="_self">Home</a></li>
               <li><a href="portfolio.html" target="_self">Portfolio</a></li>
-              <li><a href="photographer.html" target="_self">Photographer</a></li>
+              <li>
+                <a href="photographer.html" target="_self">Photographer</a>
+              </li>
               <li><a href="contact.html" target="_self">Contact</a></li>
             </ul>
           </nav>
@@ -209,5 +215,7 @@
         <p><small>&copy; 2024 Beautiful Landscapes</small></p>
       </section>
     </footer>
+
+    <script src="js/contact.js"></script>
   </body>
 </html>
