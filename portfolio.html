@@ -155,14 +155,14 @@
         </table>
       </section>
 
-      <section id='testimonials' style='text-align: center; margin: 40px 0;'>
+      <section id="testimonials" style="text-align: center; margin: 40px 0">
         <h2>What People Are Saying</h2>
-        <p id='testimonial-text' style='font-style: italic;'></p>
-        <p><strong id='testimonial-author'></strong></p>
-        <p id='testimonial-date'></p>
+        <p id="testimonial-text" style="font-style: italic"></p>
+        <p><strong id="testimonial-author"></strong></p>
+        <p id="testimonial-email"></p>
 
-        <button onclick='showPrevious()' class='js-buttons'>Previous</button>
-        <button onclick='showNext()' class='js-buttons'>Next</button>
+        <button onclick="showPrevious()" class="js-buttons">Previous</button>
+        <button onclick="showNext()" class="js-buttons">Next</button>
       </section>
 
       <section class="video-section">
@@ -219,6 +219,22 @@
           </li>
         </ol>
       </section>
+
+      <section class="favourite-location">
+        <h4>Select Your Favourite Location.</h4>
+        <select id="favourite-location">
+          <option value="">-- Choose --</option>
+          <option value="Maldives">Malvides</option>
+          <option value="Brazil">Brazil</option>
+          <option value="Nigeria">Nigeria</option>
+          <option value="Switzerland">Switzerland</option>
+          <option value="Kenya">Kenya</option>
+        </select>
+
+        <button onclick="saveFavourite()">Save</button>
+
+        <p id="favourite-message"></p>
+      </section>
     </main>
 
     <footer>
@@ -234,7 +250,9 @@
             <ul>
               <li><a href="index.html" target="_self">Home</a></li>
               <li><a href="portfolio.html" target="_self">Portfolio</a></li>
-              <li><a href="photographer.html" target="_self">Photographer</a></li>
+              <li>
+                <a href="photographer.html" target="_self">Photographer</a>
+              </li>
               <li><a href="contact.html" target="_self">Contact</a></li>
             </ul>
           </nav>

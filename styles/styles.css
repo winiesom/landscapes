@@ -212,6 +212,49 @@ h3 {
   background-color: #f0f0f0;
 }
 
+.favourite-location {
+  margin: 40px 0;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-left: 5px solid #4598a0a0;
+  border-radius: 8px;
+  max-width: 500px;
+  text-align: left;
+}
+
+.favourite-location h4 {
+  margin-bottom: 10px;
+  color: #4e4e4e;
+}
+
+#favourite-location {
+  padding: 8px 12px;
+  font-size: 1rem;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+}
+
+.favourite-location button {
+  padding: 8px 14px;
+  background-color: #4598a0a0;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.favourite-location button:hover {
+  background-color: #548b90a0;
+}
+
+#favourite-message {
+  margin-top: 15px;
+  font-style: italic;
+  color: #4598a0a0;
+  font-weight: bold;
+}
+
 /* Video Section */
 .video-section {
   width: 100%;
@@ -444,6 +487,21 @@ h3 {
   }
 }
 
+input.invalid,
+textarea.invalid {
+  border: 2px solid red;
+}
+
+input.valid,
+textarea.valid {
+  border: 2px solid green;
+}
+
+.error-message {
+  color: red;
+  font-size: 0.9rem;
+}
+
 .contact-map-section {
   background-color: #f5f5f5;
   padding: 30px;
@@ -528,15 +586,14 @@ footer {
 }
 /* Footer styles end */
 
-
 .js-buttons {
   margin-top: 20px;
-  padding: 10px 20px; 
-  font-size: 16px; 
-  background-color: darkseagreen; 
-  color: white; 
-  border: none; 
-  outline: none; 
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: darkseagreen;
+  color: white;
+  border: none;
+  outline: none;
   border-radius: 4px;
 }
 
@@ -562,7 +619,7 @@ footer {
 .photographer-controls button {
   background-color: darkcyan;
   color: white;
-  border:none;
+  border: none;
   padding: 6px 12px;
   border-radius: 4px;
   cursor: pointer;
